@@ -380,8 +380,6 @@ namespace Color_remover
             {
                 using (MemoryStream stream = new MemoryStream())
                 {
-                    DataObject dataObject = new DataObject();
-
                     previewBox.Image.Save(stream, ImageFormat.Png);
 
                     Clipboard.SetData("PNG", stream);
